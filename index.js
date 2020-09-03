@@ -1,4 +1,5 @@
-//Run script on page load
+// event handlers
+
 function handleSubmit(e) {
     e.preventDefault();
     const listItem = `<li>
@@ -16,16 +17,18 @@ function handleSubmit(e) {
     this.reset();
 }
 
-function toggleCheck() {
+function handleCheck() {
     $(this).parents("li").children(".shopping-item").toggleClass("shopping-item__checked");
 }
 
-function deleteItem() {
+function handleDelete() {
     $(this).parents('li').remove();
 }
 
+//Run script on page load
+
 $(() => {
     $("form").submit(handleSubmit);
-    $(".shopping-list").on("click", ".shopping-item-delete", deleteItem);
-    $(".shopping-list").on("click", ".shopping-item-toggle", toggleCheck);
+    $(".shopping-list").on("click", ".shopping-item-delete", handleDelete) ;
+    $(".shopping-list").on("click", ".shopping-item-toggle", handleCheck);
 })
