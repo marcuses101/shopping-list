@@ -25,10 +25,12 @@ function handleDelete() {
     $(this).parents('li').remove();
 }
 
-//Run script on page load
-
-$(() => {
+function activateListeners (){
     $("form").submit(handleSubmit);
     $(".shopping-list").on("click", ".shopping-item-delete", handleDelete) ;
     $(".shopping-list").on("click", ".shopping-item-toggle", handleCheck);
-})
+}
+
+//Run script on page load
+
+$(activateListeners);
