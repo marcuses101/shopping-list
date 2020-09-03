@@ -1,0 +1,23 @@
+{
+  "name": "shopping-list-challenge",
+  "version": "1.0.0",
+  "description": "This repo contains starter files for the *Shopping List App* challenge.",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thinkful-Ed/shopping-list.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thinkful-Ed/shopping-list/issues"
+  },
+  "homepage": "https://github.com/Thinkful-Ed/shopping-list#readme"
+}
